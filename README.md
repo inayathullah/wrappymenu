@@ -26,4 +26,7 @@ A dynamic light weight multi level menu which supports
 - Your menu is ready!
 - Dynamically change the payload based on requirement. On demand can load subitems as another JSON payload and menu will render according to the new payload.
 
+Snapshots
 
+![menu-1](https://raw.githubusercontent.com/inayathullah/wrappymenu/master/screenshot-1.png)
+![menu-2](https://raw.githubusercontent.com/inayathullah/wrappymenu/master/screenshot-2.png)
