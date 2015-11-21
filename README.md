@@ -17,7 +17,7 @@ A dynamic light weight multi level menu which supports
 - Download the wrappymenu.js and wrappymenu.css
 - Include the reference of the both files.
 - Include below directive
-- '''<wrappy-menu menu="menu" options="options" payload-ready="loading" enable-scroll="enableScroll"></wrappy-menu>'''
+- '''html<wrappy-menu menu="menu" options="options" payload-ready="loading" enable-scroll="enableScroll"></wrappy-menu>'''
 - Load the module angular.module('wrappydemo',['wrappy.pushmenu','ngAnimate']);
 - Thats it!
 - Menu is ready to render
