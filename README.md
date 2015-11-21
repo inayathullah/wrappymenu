@@ -14,16 +14,16 @@ A dynamic light weight multi level menu which supports
 
 ##How to use:
 
--Download the wrappymenu.js and wrappymenu.css
--Include the reference of the both files.
--Include below directive
+- Download the wrappymenu.js and wrappymenu.css
+- Include the reference of the both files.
+- Include below directive
     <wrappy-menu menu="menu" options="options" payload-ready="loading" enable-scroll="enableScroll"></wrappy-menu>
--Load the module angular.module('wrappydemo',['wrappy.pushmenu','ngAnimate']);
--Thats it!
--Menu is ready to render
--Load the menu items as per payload.js
--Call the menu items as app.js
--Your menu is ready!
--Dynamically change the payload based on requirement. On demand can load subitems as another JSON payload and menu will render according to the new payload.
+- Load the module angular.module('wrappydemo',['wrappy.pushmenu','ngAnimate']);
+- Thats it!
+- Menu is ready to render
+- Load the menu items as per payload.js
+- Call the menu items as app.js
+- Your menu is ready!
+- Dynamically change the payload based on requirement. On demand can load subitems as another JSON payload and menu will render according to the new payload.
 
 
