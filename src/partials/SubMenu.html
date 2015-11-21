@@ -1,0 +1,27 @@
+<div ng-show="visible" ng-class="{visible: visible, foldmenu_inactive: inactive && !collapsed}" class="levelHolderClass">
+    <div class="loader" ng-show="payloadReady">
+       Please wait loading!
+    </div>
+
+    <h2><i class="floatRight cursorPointer" ng-class="menu.icon" ng-click="openMenu($event, menu)"></i>
+    <span id="title"  ng-click="openMenu($event, menu)" ng-class="{'vertical-text': inactive}">{{menu.title}}</span></h2>
+    <div ng-show="level != 0 && !inactive" ng-class="options.backItemClass">
+        <a href="#" ng-click="goBack($event, menu)">
+            <i class="floatRight" ng-class="options.backItemIcon"></i><span ng-bind="options.backText"></span>
+        </a>
+    </div>
+
+    <ul ng-class="{invisible: inactive}" >
+        <li ng-repeat="item in menu.items" ng-class="{'active': item.isActive}">
+            <a ng-href="{{item.link}}" ng-click="onSubmenuClicked(item, $event)">
+                <i ng-if="item.menu" class="floatRight " ng-class="options.groupIcon"></i>
+                <i class="floatLeft iconSpacing" ng-class="item.icon"></i>{{item.name}}
+            </a>
+            <div ng-if="item.menu">
+                <recursive>
+                    <wrappy-submenu menu="item.menu" level="childrenLevel" visible="item.visible" payload-ready="payloadReady" element-height="elementHeight" enable-scroll="enableScroll"></wrappy-submenu>
+                </recursive>
+            </div>
+        </li>
+    </ul>
+</div>
