@@ -43,5 +43,5 @@ Snapshots
 ![menu-1](https://raw.githubusercontent.com/inayathullah/wrappymenu/master/screenshot-1.png)
 ![menu-2](https://raw.githubusercontent.com/inayathullah/wrappymenu/master/screenshot-2.png)
 
-Inspired from the belo Repo
+Inspired from this repository 
 https://github.com/wuxiaoying/angular-multilevelpushmenu
